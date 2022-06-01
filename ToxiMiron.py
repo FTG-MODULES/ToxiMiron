@@ -8,7 +8,7 @@ class ILYMod(loader.Module):
     strings = {"name": "ToxiMiron"}
 
     async def tmcmd(self, message):
-        """Оскорбления списком"""
+        """Оскорбления поочерёдно"""
         if not message.out:
             message = await message.respond("tm")
             await message.edit('<b>Говно!</b>', parse_mode= 'HTML')
@@ -97,7 +97,7 @@ class ILYMod(loader.Module):
 
 
     async def tm1cmd(self, message):
-        """Оскорбления поочерёдно"""
+        """Оскорбления списком"""
         if not message.out:
             message = await message.respond("tm1")
             await message.edit('<b>Говно!</b>', parse_mode= 'HTML')
