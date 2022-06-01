@@ -1,5 +1,6 @@
 from .. import utils, loader
 from asyncio import sleep
+from telethon.tl.types import Message
 
 
 @loader.tds
