@@ -8,7 +8,7 @@ class ILYMod(loader.Module):
 
     strings = {"name": "ToxiMiron"}
 
-    async def ToxiMiron(self, message):
+    async def ToxiMiron(self, message: Message):
         """Оскорбления списком"""
         if not message.out:
             message = await message.respond("tm")
@@ -97,7 +97,7 @@ class ILYMod(loader.Module):
 
 
 
-    async def ToxiMiron(self, message):
+    async def ToxiMiron(self, message: Message):
         """Оскорбления поочерёдно"""
         if not message.out:
             message = await message.respond("tm1")
