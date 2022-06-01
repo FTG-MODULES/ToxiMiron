@@ -1,7 +1,5 @@
 from .. import utils, loader
 from asyncio import sleep
-from telethon.tl.types import Message
-
 
 @loader.tds
 class ILYMod(loader.Module):
@@ -9,7 +7,7 @@ class ILYMod(loader.Module):
 
     strings = {"name": "ToxiMiron"}
 
-    async def ToxiMiron(self, message: Message):
+    async def tmcmd(self, message):
         """Оскорбления списком"""
         if not message.out:
             message = await message.respond("tm")
@@ -98,7 +96,7 @@ class ILYMod(loader.Module):
 
 
 
-    async def ToxiMiron(self, message: Message):
+    async def tm1cmd(self, message):
         """Оскорбления поочерёдно"""
         if not message.out:
             message = await message.respond("tm1")
